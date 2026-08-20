@@ -31,10 +31,10 @@ const Services = () => {
                 {/* first row start here */}
                 <div data-aos="zoom-in" data-aos-delay="400" id='first-row' className='w-full flex lg:flex-row flex-col justify-between items-center gap-5 mt-5'>
                     {/* left starts here */}
-                    <div id='left'className='lg:w-[50]% w-full flex lg:flex-row flex-col 
+                    <div id='left'className='lg:w-[50%] w-full flex lg:flex-row flex-col 
                     justify-between items-center gap-5'>
                         <div style={{backgroundImage: `url(${service1})`}} className='relative bg-cover bg-center 
-                        w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
+                        w-full h-[350px] lg:w-1/2 rounded-md p-8 flex justify-center items-end'>
                             {/* gradient overlay */}
                             <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
                             {/* gradient ends */}
@@ -52,7 +52,7 @@ const Services = () => {
                     
 
                     <div style={{backgroundImage: `url(${service2})`}} className='relative bg-cover bg-center 
-                            w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
+                            w-full h-[350px] lg:w-1/2 rounded-md p-8 flex justify-center items-end'>
                             {/* gradient overlay */}
                             <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
                             {/* gradient ends */}
@@ -69,10 +69,10 @@ const Services = () => {
                         </div>
                     </div>
 
-                    {/* left ends here */}
+                        {/* left ends here */}
 
                         {/* right bigger dev here */}
-                        <div id='right' className='lg:w-[50]% w-full'>
+                        <div id='right' className='lg:w-[50%] w-full'>
                             <div style={{backgroundImage: `url(${service3})`}} className='relative bg-cover bg-center 
                             w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
                             {/* gradient overlay */}
@@ -83,15 +83,88 @@ const Services = () => {
                                     <h1 className='text-white text-2xl font-semibold'>Great Wall of China</h1>
                                     <p className='text-white text-lg'>China</p>
                                 </div>
+                                <div className='lg:w-[10%] lg-[20%] bg-white rounded-full flex justify-center 
+                                items-center p-3'>
+                                    <FaPlay className='lg:text-2xl text-xl ' />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        {/* right ends here */}
+                    </div>
+                    {/* first row ends here */}
+
+                {/* 2nd row starts here */}
+                <div data-aos="zoom-in" data-aos-delay="400" id='second-row' className='w-full flex lg:flex-row-reverse flex-col justify-between items-center gap-5 mt-5'>
+                    {/* left starts here */}
+                    <div id='left'className='lg:w-[50%] w-full flex lg:flex-row flex-col 
+                    justify-between items-center gap-5'>
+                        <div style={{backgroundImage: `url(${service4})`}} className='relative bg-cover bg-center 
+                        w-full lg:w-1/2 h-[350px] rounded-md p-8 flex justify-center items-end'>
+                            {/* gradient overlay */}
+                            <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
+                            {/* gradient ends */}
+                            <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
+                                <div className='lg:w-[80%] w-full'>
+                                    <h1 className='text-white text-2xl font-semibold'>Pandar Island</h1>
+                                    <p className='text-white text-lg'>Indonasia</p>
+                                </div>
                                 <div className='w-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
                                     <FaPlay className='lg:text-2xl text-xl ' />
                                 </div>
                             </div>
                         </div>
+                    
+
+                    <div style={{backgroundImage: `url(${service5})`}} className='relative bg-cover bg-center 
+                            w-full lg:w-1/2 h-[350px] rounded-md p-8 flex justify-center items-end'>
+                            {/* gradient overlay */}
+                            <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
+                            {/* gradient ends */}
+                            <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
+                                <div className='lg:w-[80%] w-full'>
+                                    <h1 className='text-white text-2xl font-semibold'>Eifel Tower, Paris</h1>
+                                    <p className='text-white text-lg'>France</p>
+                                </div>
+                                <div className='w-[20%] bg-white rounded-full flex justify-center 
+                                items-center p-3'>
+                                    <FaPlay className='lg:text-2xl text-xl ' />
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                        {/* left ends here */}
+
+                        {/* right bigger dev here */}
+                        <div id='right' className='lg:w-[50%] w-full'>
+                            <div style={{backgroundImage: `url(${service6})`}} className='relative bg-cover bg-center 
+                            w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
+                            {/* gradient overlay */}
+                            <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
+                            {/* gradient ends */}
+                            <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
+                                <div className='lg:w-[80%] w-full'>
+                                    <h1 className='text-white text-2xl font-semibold'>Great Wall of China</h1>
+                                    <p className='text-white text-lg'>China</p>
+                                </div>
+                                <div className='lg:w-[10%] lg-[20%] bg-white rounded-full flex justify-center 
+                                items-center p-3'>
+                                    <FaPlay className='lg:text-2xl text-xl ' />
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        {/* right ends here */}
+                    </div>
+                
+                {/* 2nd row ends here */}
+
                 </div>
+
+                
+
         
     );
 }
