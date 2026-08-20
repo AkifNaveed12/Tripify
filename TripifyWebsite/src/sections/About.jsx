@@ -44,22 +44,38 @@ const About = () => {
                 <hr className='w-full border-gray-300 border-t'/>
 
                 <div data-aos="zoom-in" data-aos-delay="600" 
-                id='iconbox' className='w-full grid lg:grid-cols-2
-                grid-cols-1 justify-center items-center lg:gap-5 gap-10'></div>
+                    id='iconbox' className='w-full grid lg:grid-cols-2
+                    grid-cols-1 justify-center items-center lg:gap-5 gap-10'>
 
-            <div id='left' className='flex lg:flex-row flex-col justify-between lg:justify-between *
-            lg:items-center items-start gap-4' >
-                <div id='icon' className='w-[20]% flex justify-center items-center
-                bg-orange-600 hover:bg-black cursor-pointer p-4 rounded-md '>
-                    <FaGlobeAmericas className='text-3xl text-white'/>
+                    <div id='left' className='flex lg:flex-row flex-col justify-between lg:justify-between *
+                        lg:items-center items-start gap-4' >
+                            
+                        <div id='icon' className='w-[20]% flex justify-center items-center
+                        bg-orange-600 hover:bg-black cursor-pointer p-4 rounded-md '>
+                            <FaGlobeAmericas className='text-3xl text-white'/>
+                        </div>
+
+                        <div className='w-[80]% flex flex-col justify-center items-start gap-1'>
+                            <h1 className='text-black text-xl font-medium'>Best Destination</h1>
+                            <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum!</p>
+                        </div>
+                    </div>
+
+                    <div id='right' className='flex lg:flex-row flex-col justify-between lg:justify-between *
+                        lg:items-center items-start gap-4' >
+                            
+                        <div id='icon' className='w-[20]% flex justify-center items-center
+                        bg-orange-600 hover:bg-black cursor-pointer p-4 rounded-md '>
+                            <IoIosPricetag className='text-3xl text-white'/>
+                        </div>
+
+                        <div className='w-[80]% flex flex-col justify-center items-start gap-1'>
+                            <h1 className='text-black text-xl font-medium'>Affordable Price</h1>
+                            <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum!</p>
+                        </div>
+                    </div>                 
                 </div>
             </div>
-            <div className='w-[80]% flex flex-col justify-center items-start gap-1'>
-                <h1 className='text-black text-xl font-medium'>Best Destination</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum!</p>
-            </div>
-            </div>
-
         </div>
     );
 }
