@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const About = () => {
     useEffect(() => {
             AOS.init({
-                duraton: 800, 
+                duration: 800, 
                 delay: 200,
                 once: false
             })

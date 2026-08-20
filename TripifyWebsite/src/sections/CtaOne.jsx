@@ -9,7 +9,7 @@ const CtaOne = () => {
         AOS.init({
             delay: 200,
             once: false,
-            duraton: 800 
+            duration: 800 
             })
         }, []);
     return (

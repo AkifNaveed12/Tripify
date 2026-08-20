@@ -13,7 +13,7 @@ import { FaPlay } from 'react-icons/fa';
 const Services = () => {
     useEffect(() => {
                 AOS.init({
-                    duraton: 800, 
+                    duration: 800, 
                     delay: 200,
                     once: false
                 })
