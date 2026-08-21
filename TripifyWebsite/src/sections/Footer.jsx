@@ -19,7 +19,7 @@ const Footer = () => {
             <div id='top'
             className='bg-[#046e8f] w-full lg:px-10 p-6 rounded-md flex lg:flex-row flex-col justify-between items-start -mt-[80px]'>
                 <div className='lg:w-[70%] w-full flex flex-col justify-between items-start gap-5'>
-                    <h1 className='text-3xl font-fakhwang  font-semibold text-white text-left lg:w-[60%] w-full' >crafting unforgettable journeys, one adventure at a time!</h1>
+                    <h1 className='text-3xl font-fakhwang  font-semibold text-white text-left lg:w-[60%] w-full' >Crafting unforgettable journeys, one adventure at a time!</h1>
                     <hr className='lg:w-[10%] w-[20%] border-2 border-orange-600' />
                 </div>
 
@@ -39,7 +39,8 @@ const Footer = () => {
                 {/* 1st box */}
                 <div className='lg:w-[40%] w-full '>
                     <h1 className='text-3xl font-fakhwang font-semibold'>Tripify</h1>
-                    <p className='mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, omnis.</p>
+                    <p className='mt-5'> Your journey starts here. Discover inspiring destinations, thoughtfully planned
+                    adventures, and experiences designed to make every trip unforgettable.</p>
                     <div className='flex flex-col justify-between items-start gap-2'>
                         {/* icons and contact here */}
                         <div className='flex justify-start items-center gap-2'> 
