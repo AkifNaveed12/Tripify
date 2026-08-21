@@ -1,5 +1,4 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "installCommand": "npm ci && npm install --no-save --platform=linux --arch=x64 lightningcss@1.33.0",
     "buildCommand": "npm run build"
 }
