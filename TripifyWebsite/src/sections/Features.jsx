@@ -20,7 +20,7 @@ const Features = () => {
             className='text-gray-500 text-center lg:[60%] w-full'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, alias! Perferendis cupiditate iure voluptas fuga.</p>
 
             <div data-aos="zoom-in" data-aos-delay="300"
-            className=' w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-5'>
+            className=' w-full grid lg:grid-cols-3 grid-cols-1 justify-center mt-5 items-start gap-5'>
                 {features.map((item, index) => (
                     <div key={index} className='flex flex-col justify-center items-center gap-5 bg-gray-200 rounded-md lg:p-10 p-6'>
                         <span className='bg-orange-600 hover:bg-black cursor-pointer p-4 rounded-md text-white'><item.icon className='text-3xl'/></span>
