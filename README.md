@@ -18,7 +18,8 @@ https://github.com/user-attachments/assets/71608d75-069a-4587-bcb8-c76df7764857
 
 ## 🌍 Live Preview
 
-🔗 **Live Website:** Coming Soon
+🔗 **Live Website:** 
+https://tripifytours.vercel.app/
 
 ---
 
