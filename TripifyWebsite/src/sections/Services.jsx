@@ -1,16 +1,45 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import service1 from '../assets/service1.webp'
 import service2 from '../assets/service2.webp'
 import service3 from '../assets/service3.webp'
 import service4 from '../assets/service4.webp'
 import service5 from '../assets/service5.webp'
 import service6 from '../assets/service6.webp'
+import service3Video from '../assets/service3.mp4'
+import service6Video from '../assets/service6.mp4'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { FaPlay } from 'react-icons/fa';
+import { FaPlay, FaPause } from 'react-icons/fa';
+
+
 
 const Services = () => {
+    const service3Ref = useRef(null);
+    const service6Ref = useRef(null);
+
+    const [service3Playing, setService3Playing] = useState(false);
+    const [service6Playing, setService6Playing] = useState(false);
+
+    const toggleService3 = () => {
+    if (service3Ref.current.paused) {
+        service3Ref.current.play();
+        setService3Playing(true);
+    } else {
+        service3Ref.current.pause();
+        setService3Playing(false);
+    }
+};
+
+const toggleService6 = () => {
+    if (service6Ref.current.paused) {
+        service6Ref.current.play();
+        setService6Playing(true);
+    } else {
+        service6Ref.current.pause();
+        setService6Playing(false);
+    }
+};
     useEffect(() => {
                 AOS.init({
                     duration: 800, 
@@ -25,7 +54,7 @@ const Services = () => {
             font-fakhwang font-semibold'>Discover your next dream destination</h1>
             <p data-aos="zoom-in" data-aos-delay="200" className='text-gray-500 
             lg:w-[60]% w-full lg:text-center text-left '>From tropical escapes to iconic landmarks, discover handpicked destinations
-    that turn every journey into a story worth remembering.</p>
+            that turn every journey into a story worth remembering.</p>
             <hr data-aos="zoom-in" data-aos-delay="300" className='lg-w[7]% w-[20]% border-2 border-orange-600'/>
 
             {/*services grids here*/}
@@ -44,10 +73,6 @@ const Services = () => {
                                     <h1 className='text-white text-2xl font-semibold'>Pandar Island</h1>
                                     <p className='text-white text-lg'>Indonesia.</p>
                                 </div>
-                                <div className='w-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
                             </div>
                         </div>
                     
@@ -62,10 +87,6 @@ const Services = () => {
                                     <h1 className='text-white text-2xl font-semibold'>Eiffel Tower</h1>
                                     <p className='text-white text-lg'>Paris, France</p>
                                 </div>
-                                <div className='w-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,22 +95,41 @@ const Services = () => {
 
                         {/* right bigger dev here */}
                         <div id='right' className='lg:w-[50%] w-full'>
-                            <div style={{backgroundImage: `url(${service3})`}} className='relative bg-cover bg-center 
+                            <div className='relative bg-cover bg-center 
                             w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
+
+                             {/* video */}
+                            <video
+                                ref={service3Ref}
+                                src={service3Video}
+                                poster={service3}
+                                className='absolute inset-0 w-full h-full object-cover'
+                                playsInline
+                                onEnded={() => setService3Playing(false)}
+                            />
+
                             {/* gradient overlay */}
                             <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
                             {/* gradient ends */}
+
+                            {/* content */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
                                     <h1 className='text-white text-2xl font-semibold'>Great Wall of China</h1>
                                     <p className='text-white text-lg'>China</p>
                                 </div>
-                                <div className='lg:w-[10%] lg-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
+
+                                {/* video control */}
+                                    <button
+                                        onClick={toggleService3}
+                                        className='lg:w-[10%] bg-white rounded-full flex justify-center items-center p-3 cursor-pointer'
+                                    >
+                                        {service3Playing ? 
+                                        (<FaPause className='lg:text-2xl text-xl' />) : 
+                                        ( <FaPlay className='lg:text-2xl text-xl' />)}
+                                    </button>
                             </div>
-                            </div>
+                        </div>
                         </div>
                         {/* right ends here */}
                     </div>
@@ -110,10 +150,6 @@ const Services = () => {
                                     <h1 className='text-white text-2xl font-semibold'>Maldivian Paradise</h1>
                                     <p className='text-white text-lg'>Maldives</p>
                                 </div>
-                                <div className='w-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
                             </div>
                         </div>
                     
@@ -128,10 +164,6 @@ const Services = () => {
                                     <h1 className='text-white text-2xl font-semibold'>Seiganto-ji Temple & Nachi Falls</h1>
                                     <p className='text-white text-lg'>Wakayama, Japan</p>
                                 </div>
-                                <div className='w-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,20 +172,37 @@ const Services = () => {
 
                         {/* right bigger dev here */}
                         <div id='right' className='lg:w-[50%] w-full'>
-                            <div style={{backgroundImage: `url(${service6})`}} className='relative bg-cover bg-center 
+                            <div className='relative bg-cover bg-center 
                             w-full h-[350px] rounded-md p-8 flex justify-center items-end'>
+
+                                  {/* video */}
+                                    <video
+                                        ref={service6Ref}
+                                        src={service6Video}
+                                        poster={service6}
+                                        className='absolute inset-0 w-full h-full object-cover'
+                                        playsInline
+                                        onEnded={() => setService6Playing(false)}
+                                    />
                             {/* gradient overlay */}
                             <div className='absolute rounded-md inset-0 bg-gradient-to-t from-black/60 via-black/40 to-white/10'></div>
                             {/* gradient ends */}
+
+                            {/* content */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
                                     <h1 className='text-white text-2xl font-semibold'>Merlion Park, Singapore</h1>
                                     <p className='text-white text-lg'>Singapore</p>
                                 </div>
-                                <div className='lg:w-[10%] lg-[20%] bg-white rounded-full flex justify-center 
-                                items-center p-3'>
-                                    <FaPlay className='lg:text-2xl text-xl ' />
-                                </div>
+
+                                 {/* video control */}
+                                <button
+                                    onClick={toggleService6}
+                                    className='lg:w-[10%] bg-white rounded-full flex justify-center items-center p-3 cursor-pointer'
+                                    >
+                                        {service6Playing ? (<FaPause className='lg:text-2xl text-xl' /> ) 
+                                        : ( <FaPlay className='lg:text-2xl text-xl' /> )}
+                                </button>
                             </div>
                             </div>
                         </div>
@@ -161,7 +210,6 @@ const Services = () => {
                     </div>
                 
                 {/* 2nd row ends here */}
-
                 </div>
 
                 
