@@ -24,7 +24,8 @@ const Services = () => {
             <h1 data-aos="zoom-in" data-aos-delay="100" className='lg:text-5xl text-3xl
             font-fakhwang font-semibold'>Discover your next dream destination</h1>
             <p data-aos="zoom-in" data-aos-delay="200" className='text-gray-500 
-            lg:w-[60]% w-full lg:text-center text-left '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, recusandae!</p>
+            lg:w-[60]% w-full lg:text-center text-left '>From tropical escapes to iconic landmarks, discover handpicked destinations
+    that turn every journey into a story worth remembering.</p>
             <hr data-aos="zoom-in" data-aos-delay="300" className='lg-w[7]% w-[20]% border-2 border-orange-600'/>
 
             {/*services grids here*/}
@@ -41,7 +42,7 @@ const Services = () => {
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
                                     <h1 className='text-white text-2xl font-semibold'>Pandar Island</h1>
-                                    <p className='text-white text-lg'>Indonasia</p>
+                                    <p className='text-white text-lg'>Indonesia.</p>
                                 </div>
                                 <div className='w-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
@@ -58,8 +59,8 @@ const Services = () => {
                             {/* gradient ends */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
-                                    <h1 className='text-white text-2xl font-semibold'>Eifel Tower, Paris</h1>
-                                    <p className='text-white text-lg'>France</p>
+                                    <h1 className='text-white text-2xl font-semibold'>Eiffel Tower</h1>
+                                    <p className='text-white text-lg'>Paris, France</p>
                                 </div>
                                 <div className='w-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
@@ -106,8 +107,8 @@ const Services = () => {
                             {/* gradient ends */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
-                                    <h1 className='text-white text-2xl font-semibold'>Pandar Island</h1>
-                                    <p className='text-white text-lg'>Indonasia</p>
+                                    <h1 className='text-white text-2xl font-semibold'>Maldivian Paradise</h1>
+                                    <p className='text-white text-lg'>Maldives</p>
                                 </div>
                                 <div className='w-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
@@ -124,8 +125,8 @@ const Services = () => {
                             {/* gradient ends */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
-                                    <h1 className='text-white text-2xl font-semibold'>Eifel Tower, Paris</h1>
-                                    <p className='text-white text-lg'>France</p>
+                                    <h1 className='text-white text-2xl font-semibold'>Seiganto-ji Temple & Nachi Falls</h1>
+                                    <p className='text-white text-lg'>Wakayama, Japan</p>
                                 </div>
                                 <div className='w-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
@@ -146,8 +147,8 @@ const Services = () => {
                             {/* gradient ends */}
                             <div className='relative z-10 w-full flex lg:flex-row flex-col justify-between items-start lg:gap-1 gap-3'>
                                 <div className='lg:w-[80%] w-full'>
-                                    <h1 className='text-white text-2xl font-semibold'>Great Wall of China</h1>
-                                    <p className='text-white text-lg'>China</p>
+                                    <h1 className='text-white text-2xl font-semibold'>Merlion Park, Singapore</h1>
+                                    <p className='text-white text-lg'>Singapore</p>
                                 </div>
                                 <div className='lg:w-[10%] lg-[20%] bg-white rounded-full flex justify-center 
                                 items-center p-3'>
