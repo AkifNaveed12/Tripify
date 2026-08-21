@@ -33,13 +33,13 @@ const About = () => {
                 className='text-md text-gray-600'>About Us</h1>
                 <h1 data-aos="zoom-in" data-aos-delay="400"
                 className='lg:text-5xl text-3xl font-fakhwang font-semibold
-                text-black'>Embark on a halarious journey with our travel experts!</h1>
+                text-black'>Your journey begins with experiences worth remembering!</h1>
 
                 <p data-aos="zoom-in" data-aos-delay="500"
-                className='text-gray-700 font-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem eum laudantium esse. Omnis qui, laboriosam adipisci molestias ipsum assumenda excepturi eaque nesciunt, veniam natus odio pariatur itaque laborum corrupti.</p>
+                className='text-gray-700 font-semibold'>At Tripify, we believe travel is more than simply visiting new places. It is about discovering new cultures, creating unforgettable memories, and experiencing the world in a way that feels truly personal.</p>
 
-                <p data-aos="zoom-in" data-aos-delay="500"
-                className='text-gray-500'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis nostrum minus facilis provident, eum nisi hic. Earum, consequuntur magnam?</p>
+                <p data-aos="zoom-in" data-aos-delay="600"
+                className='text-gray-500'>From breathtaking destinations to carefully planned adventures, we make it easier to explore with confidence, comfort, and excitement. Wherever you want to go, we are here to help make the journey special.</p>
 
                 <hr className='w-full border-gray-300 border-t'/>
 
@@ -56,8 +56,8 @@ const About = () => {
                         </div>
 
                         <div className='w-[80]% flex flex-col justify-center items-start gap-1'>
-                            <h1 className='text-black text-xl font-medium'>Best Destination</h1>
-                            <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum!</p>
+                            <h1 className='text-black text-xl font-medium'>Best Destinations</h1>
+                            <p className='text-sm text-gray-500'>Explore handpicked destinations that turn every trip into an unforgettable adventure.</p>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ const About = () => {
 
                         <div className='w-[80]% flex flex-col justify-center items-start gap-1'>
                             <h1 className='text-black text-xl font-medium'>Affordable Price</h1>
-                            <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, illum!</p>
+                            <p className='text-sm text-gray-500'>Enjoy thoughtfully planned trips at prices that make exploring the world easier.</p>
                         </div>
                     </div>                 
                 </div>
