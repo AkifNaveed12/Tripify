@@ -25,8 +25,8 @@ const Packages = () => {
                 </div>
                 <div className='flex flex-col items-start justify-between gap-7'>
                     <p data-aos="zoom-in" data-aos-delay="200"
-                    className='text-gray-500 text-left w-full'>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Ipsa distinctio nulla aliquam, dignissimos nobis voluptates!</p>
+                    className='text-gray-500 text-left w-full'> Carefully crafted journeys designed to take you closer to the places,
+    cultures, and experiences worth discovering.</p>
                     <hr data-aos="zoom-in" data-aos-delay="300" className='w-[15%] border-2 border-orange-600'/>
                 </div>
             </div>
