@@ -8,6 +8,14 @@ The project focuses on clean UI design, responsive layouts, smooth animations, r
 
 ---
 
+## Demo Video  
+
+
+
+
+https://github.com/user-attachments/assets/71608d75-069a-4587-bcb8-c76df7764857
+
+
 ## 🌍 Live Preview
 
 🔗 **Live Website:** Coming Soon
@@ -284,64 +292,6 @@ Animations are configured with customizable:
 - **Visual Studio Code**
 
 ---
-
-## 📂 Project Structure
-
-```text
-Tripify-travel-and-tour-website/
-│
-├── TripifyWebsite/
-│   │
-│   ├── public/
-│   │
-│   ├── src/
-│   │   ├── assets/
-│   │   │   ├── hero.webp
-│   │   │   ├── about1.webp
-│   │   │   ├── about2.webp
-│   │   │   ├── service1.webp
-│   │   │   ├── service2.webp
-│   │   │   ├── service3.webp
-│   │   │   ├── service4.webp
-│   │   │   ├── service5.webp
-│   │   │   ├── service6.webp
-│   │   │   ├── service3.mp4
-│   │   │   ├── service6.mp4
-│   │   │   ├── packages1.webp
-│   │   │   ├── packages2.webp
-│   │   │   ├── packages3.webp
-│   │   │   ├── packages4.webp
-│   │   │   ├── packages5.webp
-│   │   │   ├── packages6.webp
-│   │   │   ├── cta1.webp
-│   │   │   └── cta1.mp4
-│   │   │
-│   │   ├── sections/
-│   │   │   ├── Header.jsx
-│   │   │   ├── Hero.jsx
-│   │   │   ├── About.jsx
-│   │   │   ├── Services.jsx
-│   │   │   ├── Packages.jsx
-│   │   │   ├── Features.jsx
-│   │   │   ├── CtaOne.jsx
-│   │   │   └── Footer.jsx
-│   │   │
-│   │   ├── export.js
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── ...
-│   │
-│   ├── index.html
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── vite.config.js
-│   └── README.md
-│
-├── .gitignore
-└── README.md
-
-The exact project structure may evolve as new features are added.
-
 ### 🧩 Component Architecture
 
 The application is divided into independent React sections.
@@ -431,3 +381,63 @@ Software Engineering
 Web Development
 Machine Learning
 Generative AI
+
+## 📂 Project Structure
+
+```text
+Tripify-travel-and-tour-website/
+│
+├── TripifyWebsite/
+│   │
+│   ├── public/
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── hero.webp
+│   │   │   ├── about1.webp
+│   │   │   ├── about2.webp
+│   │   │   ├── service1.webp
+│   │   │   ├── service2.webp
+│   │   │   ├── service3.webp
+│   │   │   ├── service4.webp
+│   │   │   ├── service5.webp
+│   │   │   ├── service6.webp
+│   │   │   ├── service3.mp4
+│   │   │   ├── service6.mp4
+│   │   │   ├── packages1.webp
+│   │   │   ├── packages2.webp
+│   │   │   ├── packages3.webp
+│   │   │   ├── packages4.webp
+│   │   │   ├── packages5.webp
+│   │   │   ├── packages6.webp
+│   │   │   ├── cta1.webp
+│   │   │   └── cta1.mp4
+│   │   │
+│   │   ├── sections/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── Packages.jsx
+│   │   │   ├── Features.jsx
+│   │   │   ├── CtaOne.jsx
+│   │   │   └── Footer.jsx
+│   │   │
+│   │   ├── export.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── ...
+│   │
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── README.md
+│
+├── .gitignore
+└── README.md ```
+---
+
+
+The exact project structure may evolve as new features are added.
+---
