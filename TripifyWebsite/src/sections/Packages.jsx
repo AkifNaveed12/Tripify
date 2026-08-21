@@ -23,7 +23,7 @@ const Packages = () => {
                     <h1 data-aos="zoom-in" data-aos-delay="100"
                     className='lg:text-5xl text-3xl font-fakhwang font-semibold text-black'> Explore our most popular tour packages</h1>
                 </div>
-                <div className='flex flex-col items-start justify-betweengap-7'>
+                <div className='flex flex-col items-start justify-between gap-7'>
                     <p data-aos="zoom-in" data-aos-delay="200"
                     className='text-gray-500 text-left w-full'>Lorem, ipsum dolor sit amet consectetur
                         adipisicing elit. Ipsa distinctio nulla aliquam, dignissimos nobis voluptates!</p>
@@ -34,7 +34,7 @@ const Packages = () => {
             
             {/* bottom div starts here */}
             <div data-aos="zoom-in" data-aos-delay="400" id='bottom' className='w-full'>
-                <div className='w-full lg:grid-cols-3 grid-cols-1 justify-between items-start gap-6 mt-10'>
+                <div className='w-full grid lg:grid-cols-3 grid-cols-1 justify-between items-start gap-6 mt-10'>
                     {tourpackages.map((item, index) => (
                         <div key={index} className='w-full flex flex-col justify-between items-start'>
                             <div id='imagebox' style={{backgroundImage: `url(${item.image})`}}
@@ -46,7 +46,7 @@ const Packages = () => {
                                 </span>
                             </div>
                             <div id='contentbox' 
-                            className='w-full flex-col justify-content justify-between items-start bg-white p-7 gap-5'>
+                            className='flex w-full flex-col  justify-between items-start bg-white p-7 gap-5'>
                                 <h1 className='text-xl text-black font-semibold font-fakhwang w-[80%]'>{item.name}</h1>
                                 <hr className='w-full border-1 border-gray-100 '/>
 
