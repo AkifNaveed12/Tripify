@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import cta1 from '../assets/cta1.webp'
-import { FaPlay } from 'react-icons/fa';
+import cta1Video from '../assets/cta1.mp4'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -14,9 +14,19 @@ const CtaOne = () => {
         }, []);
     return (
         <div id='cta1'
-        style={{backgroundImage:`url(${cta1})`}}
         className='relative w-full lg:h-[500px] lg:p-22 p-10 flex
-        flex-col justify-center items-center gap-5 bg:cover bg-center'>
+        flex-col justify-center overflow-hidden items-center gap-5 bg:cover bg-center'>
+            {/* video background */}
+            <video
+                className='absolute inset-0 w-full h-full object-cover'
+                src={cta1Video}
+                poster={cta1}
+                autoPlay
+                muted
+                loop
+                playsInline
+            />
+            
             {/* black overlay */}
             <div className='absolute bg-black/50'></div>
 
@@ -26,10 +36,7 @@ const CtaOne = () => {
                 className='lg:text-5xl text-4xl font-fakhwang font-semibold text-white lg:w-[60%] w-full text-center capitalize'>Turn your travel dreams into unforgettable journeys</h1>
                 <p data-aos="zoom-in" data-aos-delay="200" 
                 className='text-white lg:w-[50%] text-lg w-full text-center'>From hidden escapes to iconic destinations, let us help you discover new places, create lasting memories, and make every journey worth remembering.</p>
-                <div data-aos="zoom-in" data-aos-delay="300" 
-                className='bg-white lg:p-7 p-4 rounded-full'>
-                    <FaPlay className='text-orange-600 text-2xl'/>
-                </div>
+                
 
             </div>
         </div>
