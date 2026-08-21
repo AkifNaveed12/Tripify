@@ -31,9 +31,7 @@ const Hero = () => {
                             font-bold bg-transparent-100">Explore every beautiful <br />destination</h1>
 
                         <p data-aos="zoom-in" data-aos-delay="200"
-                            className="text-lg text-center lg:w-[50]% w-full"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis voluptatum, temporibus
-                            a perferendis laudantium, quo, dolorem distinctio ex saepe quae sit unde repudiandae officia blanditiis. 
-                            Exercitationem quasi voluptatem necessitatibus veniam!</p>
+                            className="text-lg text-center lg:w-[50]% w-full">Discover breathtaking places, unforgettable experiences, and journeys made just for you. Let us help you turn your next trip into a story worth remembering.</p>
 
                         <button data-aos="slide-up" data-aos-delay="300"
                         className="bg-orange-600 hover:bg-black hover:text-white
